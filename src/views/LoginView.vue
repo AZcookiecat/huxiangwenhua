@@ -8,12 +8,12 @@
       
       <form @submit.prevent="handleLogin" class="login-form">
         <div class="form-group">
-          <label for="email">邮箱</label>
+          <label for="usernameOrEmail">用户名或邮箱</label>
           <input
-            type="email"
-            id="email"
-            v-model="email"
-            placeholder="请输入您的邮箱"
+            type="text"
+            id="usernameOrEmail"
+            v-model="usernameOrEmail"
+            placeholder="请输入您的用户名或邮箱"
             required
           />
         </div>
@@ -52,7 +52,7 @@ export default {
   name: 'LoginView',
   setup() {
     const router = useRouter()
-    const email = ref('')
+    const usernameOrEmail = ref('')
     const password = ref('')
     const error = ref('')
 
@@ -61,14 +61,14 @@ export default {
       error.value = ''
       
       // 简单验证
-      if (!email.value || !password.value) {
+      if (!usernameOrEmail.value || !password.value) {
         error.value = '请填写所有必填字段'
         return
       }
       
       try {
         // 使用模拟登录
-        const response = await mockLogin(email.value, password.value)
+        const response = await mockLogin(usernameOrEmail.value, password.value)
         
         if (response.success) {
           // 存储用户信息到localStorage
@@ -80,7 +80,7 @@ export default {
           // 登录成功后跳转到首页
           router.push('/')
         } else {
-          error.value = '邮箱或密码错误'
+          error.value = '用户名/邮箱或密码错误'
         }
       } catch (err) {
         error.value = err.message || '登录失败，请稍后重试'
@@ -88,7 +88,7 @@ export default {
     }
 
     return {
-      email,
+      usernameOrEmail,
       password,
       error,
       handleLogin
