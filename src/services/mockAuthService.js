@@ -2,7 +2,7 @@
 let mockUsers = [
   {
     id: 1,
-    username: 'admin@qq.com',
+    username: 'admin',
     email: 'admin@qq.com',
     password: 'admin',
     isAdmin: true
