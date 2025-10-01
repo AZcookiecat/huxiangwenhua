@@ -133,7 +133,7 @@ export default {
         name: '朱理婧',
         position: '项目指导老师',
         bio: '本科毕业于西南交通大学轨道交通信号与控制专业，硕士研究生毕业于英国曼彻斯特大学管理与信息系统专业，现任湖南工商大学数字媒体工程与人文学院专任教师。主要研究领域为管理与信息系统、数字经济等。',
-        photoUrl: '/public/pictures/xiaozhu.jpeg',
+        photoUrl: '../assets/imgs/xiaozhu.jpeg',
         email: 'zhangming@example.com',
         linkedin: '#',
         twitter: '#'
