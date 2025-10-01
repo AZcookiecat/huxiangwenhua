@@ -115,6 +115,7 @@
 
 <script>
 import { ref } from 'vue'
+import XiaozhuImage from '../assets/imgs/xiaozhu.jpeg' // 导入图片
 
 export default {
   name: 'AboutPage',
@@ -133,7 +134,7 @@ export default {
         name: '朱理婧',
         position: '项目指导老师',
         bio: '本科毕业于西南交通大学轨道交通信号与控制专业，硕士研究生毕业于英国曼彻斯特大学管理与信息系统专业，现任湖南工商大学数字媒体工程与人文学院专任教师。主要研究领域为管理与信息系统、数字经济等。',
-        photoUrl: '../assets/imgs/xiaozhu.jpeg',
+        photoUrl: XiaozhuImage, // 使用导入的图片
         email: 'zhangming@example.com',
         linkedin: '#',
         twitter: '#'
@@ -263,7 +264,7 @@ export default {
       },
       {
         id: '2',
-        quote: '通过这个平台，我第一次如此直观地了解到湖湘文化的博大精深。3D文物展示和虚拟展厅功能非常震撼，让我仿佛身临其境，感受到了传统文化的魅力。',
+        quote: '通过这个平台，我第一次如此直观地了解到湖湘文化的博大精深。3D文物展示和虚拟展厅功能非常震撼，让我仿佛身临其境，感受传统文化的魅力。',
         authorName: '王同学',
         authorTitle: '湖南师范大学学生',
         authorAvatar: 'https://picsum.photos/seed/testimonial2/100/100'
