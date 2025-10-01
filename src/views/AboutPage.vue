@@ -130,10 +130,10 @@ export default {
     const teamMembers = ref([
       {
         id: '1',
-        name: '张明',
-        position: '项目负责人',
-        bio: '历史学博士，长期致力于湖湘文化研究和数字化保护工作，主持多项省级文化遗产数字化项目。',
-        photoUrl: 'https://picsum.photos/seed/member1/300/300',
+        name: '朱理婧',
+        position: '项目指导老师',
+        bio: '本科毕业于西南交通大学轨道交通信号与控制专业，硕士研究生毕业于英国曼彻斯特大学管理与信息系统专业，现任湖南工商大学数字媒体工程与人文学院专任教师。主要研究领域为管理与信息系统、数字经济等。',
+        photoUrl: '/public/pictures/xiaozhu.jpeg',
         email: 'zhangming@example.com',
         linkedin: '#',
         twitter: '#'
